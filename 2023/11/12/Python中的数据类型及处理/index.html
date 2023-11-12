@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Python入门笔记1（数据类型） | Yu‘s Nomadic City</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Python入门笔记1（数据类型及相关操作） | Yu‘s Nomadic City</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
   font-family: Bender;
   src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
 }
@@ -46,29 +46,8 @@ document.addEventListener("pjax:complete", reset);document.addEventListener('pja
   bszTag.texts(a),
   bszTag.shows()
 }));reset()})</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Yu‘s Nomadic City" type="application/atom+xml">
-</head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>Python入门笔记1（数据类型）</h1><div id="post-info"><span>文章发布时间: <div class="control"><time datetime="2023-11-12T07:25:57.000Z" id="date"> 2023-11-12</time></div></span><br><span>最后更新时间: <div class="control"><time datetime="2023-11-12T10:38:28.351Z" id="updated"> 2023-11-12</time></div></span><br><span>文章总字数: <div class="control">104</div></span><br><span>预计阅读时间: <div class="control">1 分钟</div></span><br><span id="busuanzi_container_page_pv">页面浏览：<span class="control" id="busuanzi_value_page_pv">加载中...</span></span></div></div><hr><div id="post-content"><p>Python的基本数据类型有三种：<strong>整型</strong>（int）、<strong>浮点型</strong>（float）、<strong>字符串型</strong>（str)</p>
-<table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">例子</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">整型</td>
-<td align="center">counter &#x3D; 100</td>
-</tr>
-<tr>
-<td align="center">浮点型</td>
-<td align="center">miles &#x3D; 1000.0</td>
-</tr>
-<tr>
-<td align="center">字符串</td>
-<td align="center">str &#x3D; ‘Hello world!’</td>
-</tr>
-</tbody></table>
-<p>而常见的标准数据类型有六种：<strong>Number</strong>、<strong>String</strong>、<strong>bool</strong>、<strong>List</strong>、<strong>Tuple</strong>、<strong>Set</strong>、<strong>Dictionary</strong></p>
-<p>六种数据类型又分为<strong>不可变数据（3个）</strong>和<strong>可变数据（3个）</strong></p>
+</head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>Python入门笔记1（数据类型及相关操作）</h1><div id="post-info"><span>文章发布时间: <div class="control"><time datetime="2023-11-12T07:25:57.000Z" id="date"> 2023-11-12</time></div></span><br><span>最后更新时间: <div class="control"><time datetime="2023-11-12T13:43:03.842Z" id="updated"> 2023-11-12</time></div></span><br><span>文章总字数: <div class="control">364</div></span><br><span>预计阅读时间: <div class="control">1 分钟</div></span><br><span id="busuanzi_container_page_pv">页面浏览：<span class="control" id="busuanzi_value_page_pv">加载中...</span></span></div></div><hr><div id="post-content"><h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1.引言"></a>1.引言</h2><p>Python中常见的标准数据类型有：<strong>Number</strong>、<strong>String</strong>、<strong>bool</strong>、<strong>List</strong>、<strong>Tuple</strong>、<strong>Set</strong>、<strong>Dictionary</strong></p>
+<p>其中有<strong>不可变数据（3个）</strong>和<strong>可变数据（3个）</strong></p>
 <table>
 <thead>
 <tr>
@@ -85,4 +64,27 @@ document.addEventListener("pjax:complete", reset);document.addEventListener('pja
 <td><strong>Number、String、Tuple</strong></td>
 </tr>
 </tbody></table>
-<div id="paginator"></div></div><div id="post-footer"></div><div id="comments"><div id="valine"></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧ </a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">Francis Wong</a></h1><div id="description"><p></p></div></div><div id="aside-block"></div><footer><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> 主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
+<h2 id="2-具体描述及相关操作"><a href="#2-具体描述及相关操作" class="headerlink" title="2.具体描述及相关操作"></a>2.具体描述及相关操作</h2><h3 id="2-1-Number（数）"><a href="#2-1-Number（数）" class="headerlink" title="2.1 Number（数）"></a>2.1 Number（数）</h3><p>在Python中，Number类支持<em>int</em>、<em>float</em>、<em>bool</em>、<em>complex</em>四种类型。</p>
+<h4 id="2-1-1-Complex类型"><a href="#2-1-1-Complex类型" class="headerlink" title="2.1.1 Complex类型"></a>2.1.1 Complex类型</h4><p>Python中支持Complex（复数）类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">a + bj 或 complex(a, b)<br></code></pre></td></tr></table></figure>
+
+<p>复数由实部a和虚部b组成（表达方式如上）</p>
+<h4 id="2-1-2-浮点型的科学计数法"><a href="#2-1-2-浮点型的科学计数法" class="headerlink" title="2.1.2 浮点型的科学计数法"></a>2.1.2 浮点型的科学计数法</h4><p>E是指数，指底数为10，E后边的数就是10的多少次幂。</p>
+<h3 id="2-2-String（字符串）"><a href="#2-2-String（字符串）" class="headerlink" title="2.2 String（字符串）"></a>2.2 String（字符串）</h3><h4 id="2-2-1字符串的特点"><a href="#2-2-1字符串的特点" class="headerlink" title="2.2.1字符串的特点"></a>2.2.1字符串的特点</h4><p>字符串是不可变数据（<em>但可以通过切片和拼接修改字符串</em>），其本身可以运用大部分运算符（或操作符）。</p>
+<h4 id="2-2-2-字符串的切片和拼接"><a href="#2-2-2-字符串的切片和拼接" class="headerlink" title="2.2.2 字符串的切片和拼接"></a>2.2.2 字符串的切片和拼接</h4><p>“切片”和“拼接”将在List&amp;Tuple章节中详细解释。接下来是实例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&gt;&gt;&gt; str1 = &#x27;Hello,world!&#x27;<br>&gt;&gt;&gt; str1 = str1[:5] + &#x27;,Python!&#x27;<br>&gt;&gt;&gt; str1<br>&#x27;Hello,Python!&#x27;<br></code></pre></td></tr></table></figure>
+
+<p>这里需要注意的是，切片操作其实只改变了一个<em>str1</em>的副本（或拷贝），即原来的旧字符串其实还在，只不过我们将变量名与新字符串链接。旧字符串失去了变量名的引用后，就被Python的垃圾回收机制释放掉了。</p>
+<h4 id="2-2-3-各种内置方法"><a href="#2-2-3-各种内置方法" class="headerlink" title="2.2.3 各种内置方法"></a>2.2.3 各种内置方法</h4><table>
+<thead>
+<tr>
+<th align="left">方法</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<div id="paginator"></div></div><div id="post-footer"></div><div id="comments"><div id="valine"></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="文章目录">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">Francis Wong</a></h1><div id="description"><p></p></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">1.引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%85%B7%E4%BD%93%E6%8F%8F%E8%BF%B0%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">2.具体描述及相关操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Number%EF%BC%88%E6%95%B0%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 Number（数）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-Complex%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.1.1.</span> <span class="toc-text">2.1.1 Complex类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E6%B5%AE%E7%82%B9%E5%9E%8B%E7%9A%84%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95"><span class="toc-number">2.1.2.</span> <span class="toc-text">2.1.2 浮点型的科学计数法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-String%EF%BC%88%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 String（字符串）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.2.1字符串的特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%88%87%E7%89%87%E5%92%8C%E6%8B%BC%E6%8E%A5"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2.2 字符串的切片和拼接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-%E5%90%84%E7%A7%8D%E5%86%85%E7%BD%AE%E6%96%B9%E6%B3%95"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.2.3 各种内置方法</span></a></li></ol></li></ol></li></ol></div></div><footer><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> 主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
