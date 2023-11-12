@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-12T07:37:02.538Z</updated>
+  <updated>2023-11-12T10:12:13.249Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,46 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Python中的数据类型及处理</title>
+    <title>Python入门笔记1（数据类型）</title>
     <link href="http://example.com/2023/11/12/Python%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%A4%84%E7%90%86/"/>
     <id>http://example.com/2023/11/12/Python%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%A4%84%E7%90%86/</id>
     <published>2023-11-12T07:25:57.000Z</published>
-    <updated>2023-11-12T07:37:02.538Z</updated>
+    <updated>2023-11-12T10:12:13.249Z</updated>
     
-    <content type="html"><![CDATA[<pre><code>Python中数据类型可分为四种：**整型**、**浮点型**、**布尔类型**以及**字符串型**</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;pre&gt;&lt;code&gt;Python中数据类型可分为四种：**整型**、**浮点型**、**布尔类型**以及**字符串型**
-&lt;/code&gt;&lt;/pre&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="Python" scheme="http://example.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2023/11/12/hello-world/"/>
-    <id>http://example.com/2023/11/12/hello-world/</id>
-    <published>2023-11-11T16:55:45.383Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Python的基本数据类型有三种：<strong>整型</strong>（int）、<strong>浮点型</strong>（float）、<strong>字符串型</strong>（str)</p><table><thead><tr><th align="center">类型</th><th align="center">例子</th></tr></thead><tbody><tr><td align="center">整型</td><td align="center">counter &#x3D; 100</td></tr><tr><td align="center">浮点型</td><td align="center">miles &#x3D; 1000.0</td></tr><tr><td align="center">字符串</td><td align="center">str &#x3D; ‘Hello world!’</td></tr></tbody></table><p>而常见的标准数据类型有六种：<strong>Number</strong>、<strong>String</strong>、<strong>bool</strong>、<strong>List</strong>、<strong>Tuple</strong>、<strong>Set</strong>、<strong>Dictionary</strong></p><p>六种数据类型又分为<strong>不可变数据（3个）</strong>和<strong>可变数据（3个）</strong></p><table><thead><tr><th align="center">不可变数据</th><th>Number、String、Tuple</th></tr></thead><tbody><tr><td align="center"><strong>可变数据</strong></td><td><strong>List、Dictionary、Set</strong></td></tr></tbody></table>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;Python的基本数据类型有三种：&lt;strong&gt;整型&lt;/strong&gt;（int）、&lt;strong&gt;浮点型&lt;/strong&gt;（float）、&lt;strong&gt;字符串型&lt;/strong&gt;（str)&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;cent</summary>
       
     
     
     
+    
+    <category term="Python入门" scheme="http://example.com/tags/Python%E5%85%A5%E9%97%A8/"/>
     
   </entry>
   
